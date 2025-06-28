@@ -1,0 +1,358 @@
+html, body { 
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    background-color: rgb(240, 255, 230); 
+    line-height: 1.5; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+main { 
+    flex-grow: 1; 
+}
+
+header { display: flex; justify-content: space-between; align-items: center; background-color: #168a06; color: white; padding: 1px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+.logo img { width: 100px; }
+.menu ul { display: flex; list-style: none; padding: 0; margin: 0; gap: 25px; }
+.menu a { color: white; text-decoration: none; font-weight: bold; }
+
+.botoes-login { 
+    display: flex; 
+    gap: 15px;
+    align-items: center; 
+}
+
+.entrar, .cadastrar { padding: 8px 16px; border-radius: 15px; font-weight: bold; color: white; background-color: #0a5500; text-decoration: none; border: none; cursor: pointer; transition: background-color 0.2s ease; }
+.entrar:hover, .cadastrar:hover { background-color: #1a9e08; }
+footer { background-color: #168a06; color: white; text-align: center; padding: 10px 0; }
+footer img { width: 18px; margin: 0 5px; }
+footer h1 { display: flex; justify-content: center; font-size: large; text-decoration: underline; margin-bottom: 5px; }
+footer h2 { display: inline-block; font-size: small; margin: 0 10px; }
+footer a { color: white; }
+
+
+.nome-usuario-header {
+    font-weight: bold;
+    font-size: 0.95em;
+    margin-right: 10px; 
+}
+
+.perfil-container {
+    background-color: #ffffff; 
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    width: 95%; 
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-bottom: 40px;
+}
+
+
+.perfil-card {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    gap: 40px; 
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.perfil-imagem {
+    flex: 0 0 160px;
+    text-align: center;
+}
+
+.foto-usuario {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 5px solid #168a06;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.alterar-foto-link {
+    font-size: 0.85em;
+    display: block; 
+    color: #168a06;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.perfil-info {
+    flex: 1; 
+    min-width: 250px; 
+}
+
+.perfil-info h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #063500;
+    font-size: 2.3em;
+}
+
+.perfil-info p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.botao-editar-perfil {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9800; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao-editar-perfil:hover {
+    background-color: #f57c00;
+    text-decoration: none;
+    color: white;
+}
+
+.perfil-resumo {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 0 0 220px; 
+    border-left: 4px solid #168a06;
+}
+
+.perfil-resumo h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.resumo-item {
+    margin-bottom: 15px;
+}
+
+.resumo-item span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #168a06;
+}
+
+.resumo-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.meus-cursos h2 {
+    color: #063500;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+    margin-bottom: 40px;
+}
+
+.curso-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 20px;
+}
+
+.curso-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ver-todos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao-ver-todos {
+    background-color: #555;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao-ver-todos:hover {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.modal-edicao {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box-edicao {
+    background-color: #fefefe;
+    padding: 20px 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.form-box-edicao h3 {
+    text-align: center;
+    color: #063500;
+}
+
+.form-box-edicao label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-box-edicao input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.button-group-edicao {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+    .perfil-card {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .perfil-info p {
+        justify-content: center; 
+    }
+
+    .perfil-resumo {
+        width: 100%; 
+        margin-top: 20px;
+        border-left: none;
+        border-top: 4px solid #168a06; 
+    }
+
+    header {
+        flex-direction: column;
+        height: auto; 
+        padding: 10px;
+    }
+     .botoes-login {
+         margin-top: 10px;
+     }
+}
+
+@media (max-width: 480px) {
+    .perfil-info h1 {
+        font-size: 1.8em;
+    }
+     .cursos-grid {
+        grid-template-columns: 1fr;
+    }
+    .perfil-container {
+        padding: 20px;
+    }
+}
+
+.curso-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 0; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.curso-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.curso-item-info {
+    padding: 15px;
+    flex-grow: 1; 
+}
+
+.curso-item h3 {
+    font-size: 1.1em;
+    color: #063500;
+    margin: 0 0 5px 0;
+}
+
+.curso-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+.botao-acessar-curso {
+    display: block;
+    background-color: #168a06;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.botao-acessar-curso:hover {
+    background-color: #0a5500;
+}

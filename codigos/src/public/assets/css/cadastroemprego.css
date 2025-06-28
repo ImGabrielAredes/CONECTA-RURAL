@@ -1,0 +1,98 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c7ffc7;
+}
+
+.botoes-header button {
+    margin-left: 10px;
+    background-color: #014d01;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botoes-header .btn-cadastrar {
+    background-color: #006400;
+}
+
+.botoes-header button:hover {
+    background-color: #013801;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-container h1 {
+    color: #228B22;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #228B22;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #196d19;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="/codigos/src/public/assets/js/proteger-pagina.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Oferta de Emprego - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/cadastroemprego.css">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+</head>
+<body>
+        <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="form-container">
+            <h1>Cadastrar Nova Oferta de Emprego</h1>
+            <p>Preencha os dados abaixo para anunciar sua vaga e encontrar mão de obra na sua região.</p>
+
+            <form>
+                <label for="nome">Nome da vaga:</label>
+                <input type="text" id="nome" placeholder="Ex: Jardineiro" required>
+
+                <label for="telefone">Telefone/WhatsApp:</label>
+                <input type="tel" id="telefone" placeholder="Ex: (34) 91234-5678" required>
+
+                <label for="area">Área de Atuação:</label>
+                <select id="area" required>
+                    <option value="">Selecione uma área...</option>
+                    <option>Agricultura</option>
+                    <option>Pecuária</option>
+                    <option>Colheita</option>
+                    <option>Plantio</option>
+                    <option>Serviços Gerais</option>
+                </select>
+
+                <label for="descricao">Descrição do Trabalho:</label>
+                <textarea id="descricao" rows="4" placeholder="Descreva o tipo de serviço, atividades, ferramentas, etc." required></textarea>
+
+                <label for="local">Local de Trabalho:</label>
+                <input type="text" id="local" placeholder="Ex: Fazenda Boa Esperança - Uberlândia, MG" required>
+
+                <label for="valor">Valor Oferecido (Diária, Semanal, Mensal):</label>
+                <input type="text" id="valor" placeholder="Ex: R$ 150,00 por diária" required>
+
+                <label for="observacoes">Observações (opcional):</label>
+                <textarea id="observacoes" rows="3" placeholder="Ex: Fornecemos alimentação e transporte."></textarea>
+
+                <button type="submit" class="btn-submit">Publicar Oferta</button>
+            </form>
+        </section>
+    </main>
+
+        <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+    
+    <script src="/codigos/src/public/assets/js/cadastroemprego.js"></script>
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+
+</body>
+</html>

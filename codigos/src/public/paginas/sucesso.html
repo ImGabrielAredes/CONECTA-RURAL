@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso! - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigo/src/public/assets/css/style-global.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .mensagem-sucesso {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+        .mensagem-sucesso h1 {
+            color: #0a5500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        </header>
+
+    <main>
+        <div class="mensagem-sucesso">
+            <h1>Sucesso!</h1>
+            <p>Sua operação foi concluída. Você será redirecionado em instantes...</p>
+        </div>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = '/codigos/src/public/paginas/perfil.html';
+        }, 2000);
+    </script>
+    <script src="/codigo/src/public/assets/js/auth.js"></script>
+</body>
+</html>

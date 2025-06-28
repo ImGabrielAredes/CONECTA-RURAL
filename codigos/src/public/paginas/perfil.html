@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/perfil.css">
+    <title>Conecta Rural - Meu Perfil</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="/codigos/src/public/paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login"></div>
+    </header>
+
+    <main>
+        <div class="perfil-container">
+
+            <section class="perfil-card">
+                <div class="perfil-imagem">
+                    <img src="/codigos/src/public/img/avatar_padrao.png" class="foto-usuario" id="foto-perfil">
+                    <a href="#" id="link-alterar-foto" class="alterar-foto-link">Alterar Foto</a>
+                    <input type="file" id="input-foto" accept="image/*" style="display: none;">
+                </div>
+                <div class="perfil-info">
+                    <h1 id="nome-usuario">Carregando...</h1>
+                    <p class="email-usuario" id="email-usuario"></p>
+                    <p class="local-usuario" id="local-usuario"></p>
+                    <p class="membro-desde" id="membro-desde"></p> 
+                    <button class="botao-editar-perfil">Editar Perfil</button>
+                </div>
+                <div class="perfil-resumo">
+                    <h2>Resumo Rápido</h2>
+                    <div class="resumo-item">
+                        <span id="numero-cursos-inscritos">0</span> <p>Cursos Inscritos</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="meus-cursos">
+                <h2>Meus Cursos</h2>
+                <div class="cursos-grid" id="cursos-grid">
+                    </div>
+                <div class="ver-todos">
+                    <a href="/codigos/src/public/paginas/cursos.html" class="botao-ver-todos">Explorar Mais Cursos</a>
+                </div>
+            </section>
+
+<div id="modal-editar-perfil" class="modal-edicao" style="display: none;">
+    <div class="form-box-edicao">
+        <form id="form-editar-perfil">
+            <h3>Editar Informações do Perfil</h3>
+            
+            <label for="edit-nome">Nome:</label>
+            <input type="text" id="edit-nome" name="nome" required>
+            
+            <label for="edit-sobrenome">Sobrenome:</label>
+            <input type="text" id="edit-sobrenome" name="sobrenome" required>
+
+            <label for="edit-rua">Rua:</label>
+            <input type="text" id="edit-rua" name="rua" required>
+
+            <label for="edit-numero">Número:</label>
+            <input type="text" id="edit-numero" name="numero" required>
+            
+            <label for="edit-bairro">Bairro:</label>
+            <input type="text" id="edit-bairro" name="bairro" required>
+
+            <div class="button-group-edicao">
+                <button type="submit" class="botao-salvar">Salvar Alterações</button>
+                <button type="button" id="botao-cancelar-edicao" class="botao-cancelar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="/codigos/src/public/img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="/codigos/src/public/img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/perfil.js"></script>
+</body>
+</html>

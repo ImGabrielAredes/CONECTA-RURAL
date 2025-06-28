@@ -1,0 +1,192 @@
+.home-container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+.secao-destaque { margin-bottom: 60px; }
+.titulo-secao { text-align: center; font-size: 2.5em; color: #063500; margin-bottom: 40px; }
+.cards-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid #168a06;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-icone {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+}
+
+.card h3 {
+    font-size: 1.6em;
+    color: #0a5500;
+    margin: 0 0 15px 0;
+}
+
+.card-descricao {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.card-acao {
+    display: inline-block;
+    margin-top: 20px; 
+    font-weight: bold;
+    color: #168a06;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #e8f5e9; 
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card:hover .card-acao {
+    background-color: #168a06;
+    color: white;
+}
+
+
+.secao-destaque {
+    margin-bottom: 60px;
+}
+
+.bloco-boas-vindas {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 50px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.bloco-boas-vindas h1 {
+    font-size: 2.8em;
+    color: #063500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bloco-boas-vindas p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.barra-pesquisa-home {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    border: 2px solid #0a5500;
+    border-radius: 50px; 
+    overflow: hidden;
+}
+
+.barra-pesquisa-home input {
+    flex-grow: 1; 
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    outline: none; 
+}
+
+.barra-pesquisa-home button {
+    border: none;
+    background-color: #0a5500;
+    color: white;
+    padding: 0 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.barra-pesquisa-home button:hover {
+    background-color: #168a06;
+}
+
+.secao-mapa-destaque {
+    margin-bottom: 60px; 
+}
+
+.card-link-mapa {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-mapa {
+    background-color: #0a5500; 
+    color: white;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-mapa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card-mapa-conteudo h3 {
+    font-size: 2.2em;
+    margin: 0 0 10px 0;
+}
+
+.card-mapa-conteudo p {
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.card-mapa-acao {
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 2px solid white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    white-space: nowrap; 
+    margin-left: 30px; 
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-mapa:hover .card-mapa-acao {
+    background-color: white;
+    color: #0a5500;
+}
+
+
+@media (max-width: 768px) {
+    .card-mapa {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-mapa-acao {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}

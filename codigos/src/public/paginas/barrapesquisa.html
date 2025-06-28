@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Pesquisa - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/barrapesquisa.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/codigos/src/public/home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/codigos/src/public/home.html">Home</a></li>
+                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login"></div>
+    </header>
+
+    <main>
+        <div class="pesquisa-container">
+            <h1 id="titulo-pesquisa">Buscando por...</h1>
+
+            <section id="resultados-produtos" class="secao-resultados">
+                <h2>Produtos Encontrados</h2>
+                <div class="grid-resultados" id="produtos-grid">
+                    </div>
+            </section>
+
+            <section id="resultados-cursos" class="secao-resultados">
+                <h2>Cursos Encontrados</h2>
+                <div class="grid-resultados" id="cursos-grid">
+                    </div>
+            </section>
+
+            <section id="resultados-empregos" class="secao-resultados">
+                <h2>Vagas de Emprego Encontradas</h2>
+                <div class="grid-resultados" id="empregos-grid">
+                    </div>
+            </section>
+
+            <p id="nenhum-resultado" class="aviso" style="display: none;">
+                Nenhum resultado encontrado para a sua busca. Tente um termo diferente.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="/codigos/src/public/img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="/codigos/src/public/img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/barrapesquisa.js"></script>
+</body>
+</html>

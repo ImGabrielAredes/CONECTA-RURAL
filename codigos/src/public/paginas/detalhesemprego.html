@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Vaga - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/detalhesemprego.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+        
+    <main class="detalhe-emprego-container">
+        <div id="detalhe-vaga-box">
+            <h1 id="titulo-vaga">Carregando vaga...</h1>
+            <p class="localizacao"> <span id="local-vaga"></span></p>
+            
+            <div class="info-bloco">
+                <h2>Descrição da Vaga</h2>
+                <p id="descricao-vaga"></p>
+            </div>
+
+            <div class="info-bloco">
+                <h2>Requisitos</h2>
+                <p id="requisitos-vaga"></p>
+            </div>
+            
+            <div class="info-bloco">
+                <h2>Contato</h2>
+                <p><strong>Responsável:</strong> <span id="responsavel-vaga"></span></p>
+                <p><strong>Telefone:</strong> <span id="contato-vaga"></span></p>
+            </div>
+            
+            <div class="candidatar-container">
+<a href="/codigos/src/public/paginas/curriculo.html?vagaId=${vaga.id}" class="botao-candidatar">Me Candidatar</a>
+            </div>
+        </div>
+    </main>
+     <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/detalhesemprego.js"></script>
+</body>
+</html>

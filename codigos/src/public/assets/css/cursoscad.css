@@ -1,0 +1,78 @@
+.cadastro-curso {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.cadastro-curso h1 {
+    color: #168a06;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario-curso {
+    background: #f5fff5;
+    padding: 25px;
+    border-radius: 10px;
+    padding-left: 10px; 
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0a5500;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.nivel {
+    display: flex;
+    gap: 15px;
+}
+
+.nivel label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.enviarcurso {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.enviar{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enviar {
+    background-color: #168a06;
+    color: white;
+}
+
+

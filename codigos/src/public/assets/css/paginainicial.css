@@ -1,0 +1,114 @@
+.busca {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.busca input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+}
+
+.busca button {
+  padding: 6px 10px;
+  border: none;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+h2 {
+  margin-left: 40px;
+}
+
+.btn-header {
+  background-color: white;
+  color: #178c0b;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.card button {
+  margin-top: 10px;
+  background-color: #0e5d00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #064d04;
+}
+
+.separador {
+  margin: 40px auto;
+  border: none;
+  height: 2px;
+  background-color: #cccccc;
+  width: 80%;
+}
+.btn-cadastrar-empregos-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-cadastrar-empregos {
+  background-color: #064d04;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar-empregos:hover {
+  background-color: #0e5d00;
+}

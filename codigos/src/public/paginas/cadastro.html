@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso - ConectaRural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css"> 
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/cadastro.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="/codigos/src/public/paginas/map.html">Mapa</a></li>
+
+            </ul>
+        </nav>
+        <div class="botoes-login"></div>
+    </header>
+
+    <main class="access-container">
+        <div id="login-container" style="display: none;">
+            <div class="form-box">
+                <form id="loginForm">
+                    <h3>Entrar na sua Conta</h3>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <button type="submit" class="botao">Entrar</button>
+                    <p class="toggle-form">Não tem uma conta? <a href="#cadastro" id="toggle-to-cadastro">Cadastre-se</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div id="cadastro-container" style="display: none;">
+            <div class="form-box">
+                <form id="cadastroForm">
+                    <div class="step" id="step1">
+                        <h3>Crie sua Conta - Informações Pessoais</h3>
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+                        <input type="text" name="nascimento" placeholder="Data de nascimento (DD/MM/AAAA)" required>
+                        <input type="text" name="cpf" placeholder="CPF" required>
+                        <div class="button-group">
+                            <button type="button" onclick="nextStep(1)">Próximo</button>
+                        </div>
+                    </div>
+                    <div class="step" id="step2" style="display:none;">
+                        <h3>Endereço</h3>
+                        <input type="text" name="cep" placeholder="CEP" required>
+                        <input type="text" name="rua" placeholder="Rua" required>
+                        <input type="text" name="bairro" placeholder="Bairro" required>
+                        <input type="text" name="numero" placeholder="Número" required>
+                        <input type="text" name="complemento" placeholder="Complemento">
+                        <div class="button-group">
+                            <button type="button" onclick="prevStep(2)">Voltar</button>
+                            <button type="button" onclick="nextStep(2)">Próximo</button>
+                        </div>
+                    </div>
+                    <div class="step" id="step3" style="display:none;">
+                        <h3>Email e Senha</h3>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="senha" placeholder="Senha" required>
+                        <input type="password" name="confirmarSenha" placeholder="Confirmar Senha" required>
+                        <div class="button-group">
+                            <button type="button" onclick="prevStep(3)">Voltar</button>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="toggle-form">Já tem uma conta? <a href="#login" id="toggle-to-login">Faça Login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+        </footer>
+
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/cadastro.js"></script>
+</body>
+</html>

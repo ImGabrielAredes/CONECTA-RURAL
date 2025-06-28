@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/cursos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="/codigos/src/public/paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login"></div>
+    </header>
+
+    <div class="filtros">
+        </div>
+      
+    <main class="cursos">
+        <section class="coluna">
+            <h1>Recomendados</h1>
+            <div class="caixas" id="recomendados"><p>Carregando...</p></div>
+        </section>
+        
+        <section class="coluna">
+            <h1>Mais vistos</h1>
+            <div class="caixas" id="maisvistos"><p>Carregando...</p></div>
+        </section>
+        
+        <section class="coluna" id="colunaPesquisaCadastro">
+            <div class="barrapesquisa">
+                <input type="text" placeholder="Buscar...">
+                <button class="ok">OK</button>
+            </div>
+            <a href="/codigos/src/public/paginas/cadastrocursos.html" class="cadastrar-curso">Cadastrar cursos</a>
+            <h1>Redes sociais</h1>
+            <div class="caixas" id="redessociais"><p>Carregando...</p></div>
+        </section>
+    </main>
+
+    <div id="secaoFiltrada" class="cursos" style="display: none;"></div>
+
+    <footer>
+        <h1>Contatos</h1>
+        <a href="#"><img src="/codigos/src/public/img/instalogo.png" alt="Instagram Logo"></a>
+        <a href="#"><img src="/codigos/src/public/img/facebooklogo.png" alt="Facebook Logo"></a>
+        </footer>
+
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/cursos.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+main {
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 2rem; 
+}
+
+nav.menu {
+    margin-right: 595px; 
+}
+
+.form-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h3 {
+    text-align: center;
+    color: #063500;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-box input:focus {
+    border-color: #168a06;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(22, 138, 6, 0.2);
+}
+
+.botao, .button-group button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.button-group button { flex: 1; }
+
+.button-group button[type="button"] {
+    background: #e0e0e0;
+    color: #333;
+}
+.button-group button[type="button"]:hover {
+    background: #ccc;
+}
+
+.botao, .button-group button[type="submit"] {
+    background: #0a5500;
+    color: white;
+}
+.botao:hover, .button-group button[type="submit"]:hover {
+    background: #1a9e08;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+.toggle-form a {
+    color: #168a06;
+    font-weight: bold;
+    text-decoration: none;
+}
+.toggle-form a:hover {
+    text-decoration: underline;
+}
+
+.step {
+    display: none;
+    flex-direction: column;
+}
+
+
+footer { 
+    background-color: #168a06; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+}
+footer img { 
+    width: 18px; 
+    margin: 0 5px; 
+}
+footer h1 { 
+    display: flex; 
+    justify-content: center; 
+    font-size: large; 
+    text-decoration: underline; 
+    margin-bottom: 5px; 
+}
+footer h2 { 
+    display: inline-block; 
+    font-size: small; 
+    margin: 0 10px; 
+}
+footer a { 
+    color: white; 
+}

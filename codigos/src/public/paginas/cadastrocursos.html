@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="/codigos/src/public/assets/js/proteger-pagina.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar curso</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/cursoscad.css">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+</head>
+        <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+<body>
+    <main class="cadastro-curso">
+        <h1>Cadastrar Novo Curso</h1>
+        
+        <form class="formulario-curso">
+            <p class="orientacao">Preencha os campos abaixo para cadastrar um novo curso na plataforma Conecta Rural.</p>
+            
+            <div class="formulario">
+                <label for="titulo">Título do Curso:</label>
+                <input type="text" id="titulo" name="titulo" required placeholder="Ex: Marketing Digital para Pequenos Produtores">
+                <small>Nome completo e descritivo do curso.</small>
+            </div>
+            
+            <div class="formulario">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione a categoria principal...</option>
+                    <option value="redes-sociais">Marketing e Redes Sociais</option>
+                    <option value="vendas">Vendas Online e E-commerce</option>
+                    <option value="producao-conteudo">Produção de Conteúdo e Mídia</option>
+                    <option value="gestao-negocios">Gestão e Finanças</option>
+                    <option value="tecnologia-agricola">Tecnologias Agrícolas</option>
+                    <option value="sustentabilidade">Sustentabilidade e Meio Ambiente</option>
+                    <option value="outros">Outros (especifique abaixo)</option>
+                </select>
+            </div>
+
+            <div class="formulario" id="outraCategoria" style="display: none;">
+                <label for="outrosTexto">Qual categoria?</label>
+                <input type="text" id="outrosTexto" name="outrosTexto" placeholder="Ex: Apicultura Moderna">
+            </div>
+            
+            <div class="formulario">
+                <label for="descricao">Descrição Detalhada:</label>
+                <textarea id="descricao" name="descricao" rows="6" required placeholder="Explique o que o aluno aprenderá, para quem é o curso e o que ele oferece."></textarea>
+                <small>Descreva o conteúdo do curso, objetivos e para quem ele é indicado.</small>
+            </div>
+            
+            <div class="formulario">
+                <label for="duracao">Duração total (horas):</label>
+                <input type="number" id="duracao" name="duracao" min="1" required placeholder="Ex: 10">
+            </div>
+
+            <div class="formulario">
+                <label>Nível de Dificuldade:</label>
+                <div class="nivel">
+                    <label><input type="radio" name="dificuldade" value="iniciante" required> Iniciante</label>
+                    <label><input type="radio" name="dificuldade" value="intermediario"> Intermediário</label>
+                    <label><input type="radio" name="dificuldade" value="avancado"> Avançado</label>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <label for="publicoAlvo">Público-alvo principal:</label>
+                <input type="text" id="publicoAlvo" name="publicoAlvo" placeholder="Ex: Pequenos agricultores, empreendedores rurais, estudantes de agronomia">
+                <small>Para quem este curso é ideal?</small>
+            </div>
+
+            <div class="formulario">
+                <label>Formato do Curso:</label>
+                <div class="formato-curso">
+                    <label><input type="radio" name="formato" value="online" required> Online</label>
+                    <label><input type="radio" name="formato" value="presencial"> Presencial</label>
+                    <label><input type="radio" name="formato" value="hibrido"> Híbrido</label>
+                </div>
+            </div>
+            
+            <div class="formulario">
+                <label for="imagemUrl">URL da Imagem de Capa do Curso:</label>
+                <input type="url" id="imagemUrl" name="imagemUrl" placeholder="Ex: https://exemplo.com/imagem-do-curso.jpg">
+                <small>Cole a URL da imagem de capa do curso (JPG, PNG).</small>
+            </div>
+            
+            <div class="formulario">
+                <label for="instrutor">Nome do Instrutor(a):</label>
+                <input type="text" id="instrutor" name="instrutor" required placeholder="Ex: Ana Souza">
+            </div>
+            
+            <div class="formulario">
+                <label for="modulos">Tópicos/Módulos do Curso (separados por vírgula):</label>
+                <textarea id="modulos" name="modulos" rows="3" placeholder="Ex: Módulo 1: Introdução à Pecuária; Módulo 2: Nutrição Animal"></textarea>
+                <small>Liste os principais temas abordados no curso.</small>
+            </div>
+            
+            <div class="input-grupo">
+                <label for="video">URL do Vídeo (YouTube Embed ou link normal):</label>
+                <input type="text" id="video" name="video" placeholder="Ex: https://www.youtube.com/watch?v=xxxxxxxxxxx">
+            </div>
+
+            <hr> 
+
+            <div class="formulario">
+                <label>Este curso será:</label>
+                <div class="tipo-curso">
+                    <label><input type="radio" name="tipoPreco" value="gratuito" id="cursoGratuito" required> Gratuito</label>
+                    <label><input type="radio" name="tipoPreco" value="pago" id="cursoPago"> Pago</label>
+                </div>
+            </div>
+
+            <div class="formulario" id="campoPreco" style="display: none;">
+                <label for="preco">Valor do Curso (R$):</label>
+                <input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="Ex: 99.90">
+                <small>Defina o valor em Reais (R$).</small>
+            </div>
+
+            <div class="formulario" id="campoMetodosPagamento" style="display: none;">
+                <label>Métodos de Pagamento Aceitos:</label>
+                <div class="metodos-pagamento-opcoes">
+                    <label><input type="checkbox" name="metodoPagamento" value="pix"> PIX</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="boleto"> Boleto Bancário</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="cartaoCredito"> Cartão de Crédito</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="transferencia"> Transferência Bancária</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="presencial"> Pagamento Presencial</label>
+                    <label><input type="checkbox" name="metodoPagamento" value="outrosMetodos"> Outro(s) (especifique)</label>
+                </div>
+            </div>
+
+            <div class="formulario" id="campoOutrosMetodos" style="display: none;">
+                <label for="outrosMetodosTexto">Especifique outros métodos de pagamento:</label>
+                <textarea id="outrosMetodosTexto" name="outrosMetodosTexto" rows="2" placeholder="Ex: PicPay, Mercado Pago"></textarea>
+            </div>
+            
+            <div class="enviarcurso">
+                <button type="submit" class="enviar">Cadastrar Curso</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+    <script src="../assets/js/cadastrocursos.js"></script>
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+
+</body>
+</html>

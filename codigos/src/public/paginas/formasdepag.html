@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="/codigos/src/public/assets/js/proteger-pagina.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escolher Forma de Pagamento</title>
+  <link rel="stylesheet" href="../assets/css/formasdepag.css" />
+  <link rel="stylesheet" href="../assets/css/style-global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+  <main class="pagamento-container">
+    <div class="pagamento-box">
+      <h2>Escolha a Forma de Pagamento</h2>
+      <div class="opcoes-pagamento">
+        <button onclick="selecionarPagamento('pix')"><i class="fas fa-qrcode"></i> Pix</button>
+<button onclick="selecionarPagamento('debito')"><i class="fas fa-credit-card"></i> Débito</button>
+<button onclick="selecionarPagamento('credito')"><i class="far fa-credit-card"></i> Crédito</button>
+<button onclick="selecionarPagamento('boleto')"><i class="fas fa-barcode"></i> Boleto</button>
+      </div>
+    </div>
+  </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+  <script>
+  function selecionarPagamento(tipo) {
+    localStorage.setItem("formaPagamento", tipo);
+    window.location.href = tipo + ".html";
+  }
+  </script>
+
+  <script src="/codigos/src/public/assets/js/auth.js"></script>
+  
+</body>
+
+</html>

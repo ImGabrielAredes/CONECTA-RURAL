@@ -1,0 +1,269 @@
+.cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 250px;
+}
+
+.coluna h1 {
+    background-color: #7aff75;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    border: 2px solid #0a5500;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itemcurso {
+    background: #168a06;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.itemcurso img {
+    width: 100px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.itemcurso p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.itemcurso h2 {
+    margin: 0;
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+
+.sabermais {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 117, 0);
+    font-size: small;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.sabermais:hover {
+    background-color: #0a5500;
+}
+
+.btn-editar,
+.btn-excluir {
+    display: block;
+    padding: 8px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9em;
+    width: 80%;
+    max-width: 150px;
+    background-color: #0a5500;
+    color: white;
+}
+
+.btn-editar:hover,
+.btn-excluir:hover {
+    background-color: rgb(27, 117, 0);
+}
+
+.barrapesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.barrapesquisa input {
+    padding: 8px 12px;
+    border: 1px solid rgb(27, 117, 0);
+    border-radius: 15px 0 0 15px;
+    width: 150px;
+    outline: none;
+}
+
+.barrapesquisa .ok {
+    padding: 8px 15px;
+    background-color: #0a5500;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.barrapesquisa .ok:hover {
+    background-color: rgb(27, 117, 0);
+}
+
+.cadastrar-curso {
+    background-color: #0a5500;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #0a5500;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cadastrar-curso:hover {
+    background-color: rgb(27, 117, 0);
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.filtros select,
+.filtros button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #0a5500;
+    background-color: white;
+    color: #0a5500;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filtros button {
+    background-color: #0a5500;
+    color: white;
+}
+
+.filtros button:hover {
+    background-color: rgb(27, 117, 0);
+}
+
+#secaoFiltrada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#secaoFiltrada .itemcurso {
+    width: 250px;
+    background: #168a06;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#secaoFiltrada .itemcurso img {
+    width: 100px;
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+#secaoFiltrada .itemcurso h2 {
+    margin: 0;
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+
+#secaoFiltrada .itemcurso p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+#secaoFiltrada .sabermais {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 117, 0);
+    font-size: small;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+#secaoFiltrada .sabermais:hover {
+    background-color: #0a5500;
+}
+
+#secaoFiltrada .btn-editar,
+#secaoFiltrada .btn-excluir {
+    display: block;
+    padding: 8px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9em;
+    width: 80%;
+    max-width: 150px;
+}
+
+#secaoFiltrada .btn-editar {
+    background-color: #0a5500;
+    color: white;
+}
+
+#secaoFiltrada .btn-editar:hover {
+    background-color: rgb(27, 117, 0);
+}
+
+#secaoFiltrada .btn-excluir {
+    background-color: #0a5500;
+    color: white;
+}
+
+#secaoFiltrada .btn-excluir:hover {
+    background-color: rgb(27, 117, 0);
+}

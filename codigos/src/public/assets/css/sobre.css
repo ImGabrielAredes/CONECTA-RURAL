@@ -1,0 +1,59 @@
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.secao-titulo { text-align: center; font-size: 2.5rem; color: #063500; margin-bottom: 60px; }
+
+.missao-hero {
+    background-color: #0a5500;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.missao-hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.historia {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.historia-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.historia-texto { flex: 1; }
+.historia-texto h2 { font-size: 2.2rem; color: #063500; margin-top: 0; margin-bottom: 20px; }
+.historia-texto p { font-size: 1.1rem; line-height: 1.7; color: #555; margin-bottom: 15px; }
+
+.historia-imagem { flex: 1; }
+.historia-imagem img { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+
+.valores {
+    padding: 80px 0;
+    background-color: #f0fdf4;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.valor-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.valor-icone { width: 50px; height: 50px; margin-bottom: 20px; }
+.valor-card h3 { font-size: 1.5rem; color: #333; margin-bottom: 15px; }
+.valor-card p { font-size: 1rem; color: #666; line-height: 1.6; }

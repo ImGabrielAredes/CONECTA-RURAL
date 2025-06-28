@@ -1,0 +1,729 @@
+{
+  "usuarios": [
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Tomates Orgânicos",
+      "descricao": "Tomate orgânico, cultivado com todo o cuidado e carinho, direto da Fazenda Nilton Santos. Ideal a qualquer receita, totalmente livre de agrotóxicos.",
+      "preco": 9.76,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "18 kcal (100g)",
+        "carboidratos": "3.9g",
+        "proteinas": "0.9g",
+        "fibras": "1.2g",
+        "vitaminaC": "13.7mg"
+      },
+      "categoria": "Legumes e Verduras",
+      "imagens": [
+        "tomate1.png",
+        "tomate2.png"
+      ],
+      "produtor": {
+        "nome": "Guilherme Arealdo",
+        "propriedade": "Fazenda Nilton Santos",
+        "localizacao": "Nova Esperança - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Miguel Torres",
+          "comentario": "Tomate super fresco! Chegou rápido.",
+          "nota": 5
+        },
+        {
+          "usuario": "Luiza Alves",
+          "comentario": "Muito saboroso. Recomendo.",
+          "nota": 4
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Ovos Caipiras",
+      "descricao": "Ovos caipiras fresquinhos, de galinhas criadas soltas, comendo ração natural. Perfeitos para o café da manhã ou qualquer receita.",
+      "preco": 14.31,
+      "unidade": "bandeja",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "155 kcal (100g)",
+        "carboidratos": "1.1g",
+        "proteinas": "12.6g",
+        "fibras": "0g",
+        "vitaminaD": "37 IU"
+      },
+      "categoria": "Laticínios e Ovos",
+      "imagens": [
+        "ovos1.png",
+        "ovos2.png"
+      ],
+      "produtor": {
+        "nome": "Carmen Rosa Aveiro",
+        "propriedade": "Fazenda Aras do Norte",
+        "localizacao": "Três Marias - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Odete Valadão",
+          "comentario": "Nenhum ovo chegou estragado! Recomendo a todos que buscam qualidade.",
+          "nota": 5
+        },
+        {
+          "usuario": "Roger Machado de Assis",
+          "comentario": "Compro com eles recorrentemente, e nunca me deixaram na mão.",
+          "nota": 4.5
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Contra filé",
+      "descricao": "Corte bovino extremamente macio e saboroso, com o gado utilizado tratado da melhor forma.",
+      "preco": 45.98,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "242 kcal",
+        "carboidratos": "0g",
+        "proteinas": "26g",
+        "gorduras_totais": "15g",
+        "gorduras_saturadas": "6g",
+        "gorduras_trans": "0.5g",
+        "colesterol": "80mg",
+        "vitaminaB12": "2.0µg"
+      },
+      "categoria": "Açougue",
+      "imagens": [
+        "file1.png",
+        "file2.png"
+      ],
+      "produtor": {
+        "nome": "Jaerci Carvalho",
+        "propriedade": "Fazenda Predo Areades",
+        "localizacao": "Bom Despacho - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Rosa Martínez",
+          "comentario": "A carne mais fresca da região! Sempre está na minha lista do mês.",
+          "nota": 5
+        },
+        {
+          "usuario": "Abraaão Goytacazes",
+          "comentario": "O corte mais gostoso da região, carne muito bem tratada.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Frango Caipira - Filé de Peito",
+      "descricao": "Frango Caipira criado em galinheiro com o máximo de cuidado, com o abate e tratamento da carne confiáveis. De família para família.",
+      "preco": 18.83,
+      "unidade": "bandeja",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "165 kcal",
+        "carboidratos": "0g",
+        "proteinas": "31g",
+        "gorduras_totais": "3.6g",
+        "vitaminaB6": "0.6mg",
+        "vitaminaB12": "0.3µg"
+      },
+      "categoria": "Açougue",
+      "imagens": [
+        "peito1.png",
+        "peito2.png"
+      ],
+      "produtor": {
+        "nome": "Ricardo Freire de Jesus",
+        "propriedade": "Fazenda Nilton Santos",
+        "localizacao": "Nova Esperança - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Tereza de Cotia",
+          "comentario": "O Filé aqui em casa é um dos itens do açougue mais barato, então sempre estamos comprando. Muito bom!",
+          "nota": 4.5
+        },
+        {
+          "usuario": "Anamaria Motta Magalhães",
+          "comentario": "Imperdível! Sempre que sobra um dinheirinho no final do mês, compro!",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "Arroz",
+      "descricao": "Arroz cultivado na lavoura rica de nutrientes da Fazenda Nilton Santos. Totalmente livre de agrotóxicos.",
+      "preco": 35,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "130 kcal",
+        "carboidratos": "28g",
+        "proteinas": "2.5g",
+        "gorduras_totais": "0.3g",
+        "vitaminaB1": "0.07mg",
+        "vitaminaB3": "1.5mg"
+      },
+      "categoria": "Cereais",
+      "imagens": [
+        "sacoarroz1.png",
+        "sacoarroz2.png"
+      ],
+      "produtor": {
+        "nome": "Olinto de Braga",
+        "propriedade": "Fazenda Nilton Santos",
+        "localizacao": "Nova Esperança - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Marcelo Oliveira",
+          "comentario": "Essencial para qualquer refeição. Sempre me satisfez.",
+          "nota": 5
+        },
+        {
+          "usuario": "Rosalina Campelário",
+          "comentario": "Fazenda Nilton Santos, meus parabéns! Mais um produto de qualidade.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "Alface",
+      "descricao": "Alfaces cultivados sem agrotóxicos e com paixão familiar, direto para a sua casa!",
+      "preco": 2.99,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "15 kcal",
+        "carboidratos": "2.9g",
+        "proteinas": "1.4g",
+        "gorduras_totais": "0.2g",
+        "vitaminaA": "740 IU",
+        "vitaminaC": "9.2mg",
+        "folato": "38µg"
+      },
+      "categoria": "Legumes e Verduras",
+      "imagens": [
+        "alface1.png",
+        "alface2.png"
+      ],
+      "produtor": {
+        "nome": "Lourdes Gomes Bragança",
+        "propriedade": "Fazenda Nilton Santos",
+        "localizacao": "Nova Esperança - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Rita Medeiros de Assunção",
+          "comentario": "Compro direto para controlar a minha pressão! Sempre limpos e bem cuidados.",
+          "nota": 5
+        },
+        {
+          "usuario": "Silvestre de Lima",
+          "comentario": "Ótimo produto. Fazenda Nilton Santos sempre nos deixando com vontade de voltar.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "nome": "Queijo Minas Frescal",
+      "descricao": "Produzido artesanalmente com leite fresco, ideal para o café da manhã ou receitas típicas mineiras.",
+      "preco": 22.5,
+      "unidade": "unidade",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "264 kcal",
+        "carboidratos": "2g",
+        "proteinas": "17g",
+        "gorduras_totais": "21g",
+        "calcio": "500mg"
+      },
+      "categoria": "Laticínios e Ovos",
+      "imagens": [
+        "queijo1.png",
+        "queijo2.png"
+      ],
+      "produtor": {
+        "nome": "Mariana de Abreu",
+        "propriedade": "Sítio Vale do Leite",
+        "localizacao": "São João del-Rei - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Jonas Ribeiro",
+          "comentario": "Muito saboroso e fresco. Um dos melhores queijos da região.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "nome": "Batata Doce Roxa",
+      "descricao": "Fonte de energia saudável, colhida no ponto certo para manter sabor e textura.",
+      "preco": 5.8,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "86 kcal",
+        "carboidratos": "20g",
+        "proteinas": "1.6g",
+        "vitaminaA": "14187 IU"
+      },
+      "categoria": "Legumes e Verduras",
+      "imagens": [
+        "batata1.jpg",
+        "batata2.png"
+      ],
+      "produtor": {
+        "nome": "Bruno Souza",
+        "propriedade": "Chácara Santa Tereza",
+        "localizacao": "Viçosa - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Eliane Barbosa",
+          "comentario": "Excelente qualidade. Uso até para fazer chips.",
+          "nota": 4.5
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "nome": "Feijão Carioca",
+      "descricao": "Grãos selecionados, direto da lavoura, perfeitos para aquele feijão caseiro.",
+      "preco": 7.2,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "127 kcal",
+        "carboidratos": "23g",
+        "proteinas": "9g",
+        "fibras": "8g",
+        "ferro": "2.1mg"
+      },
+      "categoria": "Cereais",
+      "imagens": [
+        "feijao1.jpg",
+        "feijao2.png"
+      ],
+      "produtor": {
+        "nome": "Elias Gonçalves",
+        "propriedade": "Fazenda Sol Nascente",
+        "localizacao": "Paracatu - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Joana Lima",
+          "comentario": "Feijão de qualidade, cozinha rápido e saboroso.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "nome": "Mel Puro de Abelha",
+      "descricao": "100% natural, extraído de forma sustentável, sem adição de açúcares.",
+      "preco": 18.9,
+      "unidade": "frasco",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "304 kcal (100g)",
+        "carboidratos": "82g",
+        "proteinas": "0.3g"
+      },
+      "categoria": "Doces e Naturais",
+      "imagens": [
+        "mel1.jpg",
+        "mel2.png"
+      ],
+      "produtor": {
+        "nome": "Vanderlei Rocha",
+        "propriedade": "Meliponário Esperança",
+        "localizacao": "Pirapora - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Carlos Fonseca",
+          "comentario": "Muito bom! Dá pra sentir que é puro mesmo.",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "nome": "Cenoura Orgânica",
+      "descricao": "Cultivada com práticas sustentáveis e sem uso de pesticidas.",
+      "preco": 4.99,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "41 kcal",
+        "carboidratos": "10g",
+        "proteinas": "0.9g",
+        "vitaminaA": "835µg"
+      },
+      "categoria": "Legumes e Verduras",
+      "imagens": [
+        "cenoura1.jpg",
+        "cenoura2.png"
+      ],
+      "produtor": {
+        "nome": "Juliana Lopes",
+        "propriedade": "Sítio Bela Vista",
+        "localizacao": "Lavras - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Patrícia Nogueira",
+          "comentario": "Adorei! Muito fresquinhas e doces.",
+          "nota": 4.5
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "nome": "Pão de Queijo Congelado",
+      "descricao": "Receita tradicional mineira, pronto para assar e servir quentinho.",
+      "preco": 16,
+      "unidade": "pacote",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "290 kcal",
+        "carboidratos": "30g",
+        "proteinas": "5g",
+        "gorduras_totais": "15g"
+      },
+      "categoria": "Panificados",
+      "imagens": [
+        "paoqueijo1.jpg",
+        "paoqueijo2.png"
+      ],
+      "produtor": {
+        "nome": "Elenice Paiva",
+        "propriedade": "Delícias da Roça",
+        "localizacao": "Itajubá - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Henrique Alencar",
+          "comentario": "Simplesmente delicioso, parece feito na hora!",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "nome": "Banana Prata",
+      "descricao": "Bananas colhidas maduras no pé, direto da roça para sua casa.",
+      "preco": 3.25,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "89 kcal",
+        "carboidratos": "23g",
+        "proteinas": "1.1g",
+        "potassio": "358mg"
+      },
+      "categoria": "Frutas",
+      "imagens": [
+        "banana1.jpg",
+        "banana2.png"
+      ],
+      "produtor": {
+        "nome": "Lucas Ferreira",
+        "propriedade": "Sítio Bananal",
+        "localizacao": "Teófilo Otoni - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Marina Duarte",
+          "comentario": "As bananas chegaram no ponto certo. Muito boas!",
+          "nota": 5
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "nome": "Leite de Vaca Integral",
+      "descricao": "Leite fresco, ordenhado diariamente, com alto padrão de qualidade.",
+      "preco": 6.5,
+      "unidade": "litro",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "61 kcal",
+        "carboidratos": "4.8g",
+        "proteinas": "3.2g",
+        "gorduras_totais": "3.3g",
+        "calcio": "113mg"
+      },
+      "categoria": "Laticínios e Ovos",
+      "imagens": [
+        "leite1.jpg",
+        "leite2.png"
+      ],
+      "produtor": {
+        "nome": "Ana Paula Silveira",
+        "propriedade": "Sítio Campo Verde",
+        "localizacao": "Patos de Minas - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Douglas Farias",
+          "comentario": "Leite de verdade! Excelente para fazer doces.",
+          "nota": 4.5
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "nome": "Abobrinha Italiana",
+      "descricao": "Abobrinhas verdes, frescas e ideais para grelhar ou cozinhar.",
+      "preco": 4.2,
+      "unidade": "kg",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "17 kcal",
+        "carboidratos": "3.1g",
+        "proteinas": "1.2g",
+        "vitaminaC": "17.9mg"
+      },
+      "categoria": "Legumes e Verduras",
+      "imagens": [
+        "abobrinha1.jpg",
+        "abobrinha2.png"
+      ],
+      "produtor": {
+        "nome": "Carlos Nascimento",
+        "propriedade": "Fazenda Estrela",
+        "localizacao": "Monte Carmelo - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Glória Araújo",
+          "comentario": "Muito boas para refogado, bem fresquinhas.",
+          "nota": 4.8
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "nome": "Morango Orgânico",
+      "descricao": "Colhido manualmente com o máximo cuidado, ideal para sobremesas e sucos.",
+      "preco": 12,
+      "unidade": "caixa",
+      "disponivel": true,
+      "informacoes_nutricionais": {
+        "calorias": "33 kcal",
+        "carboidratos": "8g",
+        "proteinas": "0.7g",
+        "vitaminaC": "58.8mg"
+      },
+      "categoria": "Frutas",
+      "imagens": [
+        "morango1.jpg",
+        "morango2.png"
+      ],
+      "produtor": {
+        "nome": "Márcia Menezes",
+        "propriedade": "Sítio Morangueira",
+        "localizacao": "Barbacena - MG"
+      },
+      "avaliacoes": [
+        {
+          "usuario": "Léo Santana",
+          "comentario": "Delicioso! Não durou nem um dia aqui em casa.",
+          "nota": 5
+        }
+      ]
+    }
+  ],
+  "empregos": [
+    {
+      "id": "1",
+      "tituloVaga": "Tratorista",
+      "descricao": "Vaga para tratorista com experiência em operação de máquinas agrícolas e manutenção básica.",
+      "local": "Fazenda São Miguel",
+      "responsavel": "Henrique Fagundes",
+      "contato": "(31)92345-7843",
+      "requisitos": "Ter experiência na gestão de tratores, focado na sua funcionalidade e praticidade."
+    },
+    {
+      "id": "2",
+      "tituloVaga": "Técnico Agrícola",
+      "descricao": "Vaga para técnico agrícola com experiência em manejo de lavouras, orientações técnicas e acompanhamento de produção.",
+      "local": "Fazenda Verde Vale",
+      "responsavel": "Conceição Dolores",
+      "contato": "(31)92039-1939",
+      "requisitos": "Saber gerenciar blocos de agricultura, focado essencialmente na manutenção de lavouras e nos resultados destas."
+    },
+    {
+      "id": "3",
+      "tituloVaga": "Auxiliar Rural",
+      "descricao": "Vaga para auxiliar rural com experiência em atividades do campo, como plantio, colheita e cuidados com a lavoura.",
+      "local": "Fazenda Nova Esperança",
+      "responsavel": "Odete Silva",
+      "contato": "(31)91020-3030",
+      "requisitos": "Manutenção básica de lavoura, com manejo de técnicas rurais."
+    },
+    {
+      "id": "4",
+      "tituloVaga": "Colhedor de Café",
+      "descricao": "Vaga para colhedor de café com experiência em colheita manual, agilidade e cuidado com os grãos.",
+      "local": "Sítio Boa Vista",
+      "responsavel": "AnaMaria Motta",
+      "contato": "(31)94444-0000",
+      "requisitos": "Experiência de pelo menos 2 anos em cafezais, desde seu plantio, até a colheita."
+    },
+    {
+      "id": "5",
+      "tituloVaga": "Irrigador de Plantações",
+      "descricao": "Vaga para irrigador de plantações com experiência em sistemas de irrigação e manejo correto da água no campo.",
+      "local": "Fazenda Primavera",
+      "responsavel": "Luiz Eduardo",
+      "contato": "(31)99999-0000",
+      "requisitos": "Experiência com a gestão de plantações, em relação a irrigação e cuidados."
+    },
+    {
+      "id": "6",
+      "tituloVaga": "Trabalhador de Colheita",
+      "descricao": "Vaga para trabalhador de colheita com experiência em colheita manual, agilidade e cuidado com os produtos agrícolas.",
+      "local": "Fazenda Bom Sucesso",
+      "responsavel": "Estevão Faria",
+      "contato": "(31)98899-1110",
+      "requisitos": "Experiência com colheita no geral."
+    }
+  ],
+  "cursos": [
+    {
+      "id": "1",
+      "titulo": "Como utilizar o instagram",
+      "descricao": "Aprenda a usar o Instagram para promover seu negócio rural, desde a criação de conteúdo visual atraente até o uso de hashtags e stories para engajar seu público-alvo.",
+      "imagem": "instalogo.png",
+      "categoria": "Marketing e Redes Sociais",
+      "duracao": 8,
+      "dificuldade": "iniciante",
+      "publicoAlvo": "Pequenos produtores, empreendedores rurais, interessados em marketing digital",
+      "formato": "online",
+      "instrutor": "Ana Carolina Silva",
+      "modulos": [
+        "Introdução ao Instagram para Negócios",
+        "Criação de Conteúdo Visual Atraente",
+        "Estratégias de Hashtags e Engajamento",
+        "Instagram Stories e Reels para o Rural",
+        "Análise de Métricas e Crescimento"
+      ],
+      "tipoPreco": "gratuito",
+      "preco": 0,
+      "metodosPagamento": [],
+      "outrosMetodosTexto": "",
+      "visualizacoes": 150,
+      "data": "2025-05-02",
+      "video": "https://youtu.be/PQULFL8biAs?si=zq13kOlhm_O5HeIx"
+    },
+    {
+      "id": "2",
+      "titulo": "Como otimizar suas vendas online",
+      "descricao": "Melhore suas estratégias de vendas pela internet, aprendendo sobre e-commerce, precificação, logística e atendimento ao cliente no ambiente digital.",
+      "imagem": "logocrbranco.png",
+      "categoria": "Vendas Online e E-commerce",
+      "duracao": 12,
+      "dificuldade": "intermediario",
+      "publicoAlvo": "Empreendedores rurais, produtores com produtos para venda online, gerentes de vendas",
+      "formato": "online",
+      "instrutor": "Ricardo Mendes",
+      "modulos": [
+        "Planejamento de Vendas Online",
+        "Construindo sua Loja Virtual (Plataformas)",
+        "Estratégias de Precificação e Promoção",
+        "Logística e Entrega no E-commerce Rural",
+        "Atendimento ao Cliente e Pós-venda"
+      ],
+      "tipoPreco": "pago",
+      "preco": 129.9,
+      "metodosPagamento": [
+        "pix",
+        "cartaoCredito"
+      ],
+      "outrosMetodosTexto": "",
+      "visualizacoes": 90,
+      "data": "2025-09-02",
+      "video": "https://youtu.be/qWSzguf5mZ4?si=X05gk_IHo3kVTHdr"
+    },
+    {
+      "id": "3",
+      "titulo": "Como gravar videos para o youtube",
+      "descricao": "Descubra como criar vídeos atrativos e profissionais para o YouTube, desde o roteiro e captação até a edição e otimização para melhores resultados.",
+      "imagem": "youtubelogo.png",
+      "categoria": "Produção de Conteúdo e Mídia",
+      "duracao": 15,
+      "dificuldade": "intermediario",
+      "publicoAlvo": "Produtores de conteúdo, agricultores que querem compartilhar seu dia a dia, youtubers iniciantes",
+      "formato": "hibrido",
+      "instrutor": "Felipe Vieira",
+      "modulos": [
+        "Conceitos de Roteiro e Storytelling",
+        "Equipamentos e Técnicas de Captação",
+        "Edição de Vídeos (Software e Boas Práticas)",
+        "Otimização para YouTube (SEO e Thumbnails)",
+        "Publicação e Promoção do Conteúdo"
+      ],
+      "tipoPreco": "pago",
+      "preco": 199,
+      "metodosPagamento": [
+        "pix",
+        "boleto",
+        "cartaoCredito"
+      ],
+      "outrosMetodosTexto": "PicPay",
+      "visualizacoes": 110,
+      "data": "2011-01-01",
+      "video": "https://youtu.be/fBfy7H6ayLI?si=2cPj_RaAdejU4bQP"
+    },
+    {
+      "id": "4",
+      "titulo": "Como criar conta no instagram",
+      "descricao": "Passo a passo para criar uma conta no Instagram do zero, ideal para iniciantes que desejam se conectar com a comunidade rural e divulgar seus produtos.",
+      "imagem": "instalogo.png",
+      "categoria": "Marketing e Redes Sociais",
+      "duracao": 3,
+      "dificuldade": "iniciante",
+      "publicoAlvo": "Novos usuários do Instagram, pequenos produtores que buscam visibilidade",
+      "formato": "online",
+      "instrutor": "Mariana Costa",
+      "modulos": [
+        "O que é Instagram e Por que Usar?",
+        "Criando Sua Conta (Passo a Passo)",
+        "Configurações Essenciais de Perfil",
+        "Primeiros Posts e Interações",
+        "Dicas de Segurança e Privacidade"
+      ],
+      "tipoPreco": "gratuito",
+      "preco": 0,
+      "metodosPagamento": [],
+      "outrosMetodosTexto": "",
+      "visualizacoes": 800,
+      "data": "2023-10-10",
+      "video": "https://youtu.be/tHM0JC7KZTo?si=1zPJj-ERaSSfuUzv"
+    }
+  ],
+  "candidaturas": [
+    {
+      "id": "d7ae",
+      "vagaId": null,
+      "usuarioId": "63fc",
+      "nomeCandidato": "Gabrie Areds",
+      "emailCandidato": "gabrieledes1@gmail.com",
+      "nomeArquivo": "TheoMaitêEkids.pdf",
+      "dataCandidatura": "2025-06-28T16:50:44.913Z"
+    }
+  ],
+  "inscricoes": [
+  ]
+}

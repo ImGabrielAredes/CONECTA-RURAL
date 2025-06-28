@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/codigos/src/public/assets/css/detalhes.css">
+        <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+    <title>Conecta Rural</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+<main class="container-detalhes">
+
+    <section id="produto-principal">
+        <div class="imagem-produto">
+            <img id="imagem-principal" src="/codigos/src/public/img/produto_padrao.jpg" alt="Imagem Principal do Produto">
+            <div class="imagens-secundarias" id="imagens-secundarias">
+                </div>
+        </div>
+        <div class="info-principal">
+            <h1 id="nome-produto">Nome do Produto</h1>
+            <p class="preco">R$ <span id="preco-produto">0,00</span> / <span id="unidade">Unidade</span></p>
+            <p class="disponibilidade">Disponibilidade: <span id="disponibilidade-produto">Em Estoque</span></p>
+            
+            <div class="compra-box">
+           <a href="/codigos/src/public/paginas/formasdepag.html" class="botao-comprar" id="botao-comprar-produto">Comprar</a>
+
+            </div>
+
+            <div class="info-produtor-resumo">
+                <h2>Produtor</h2>
+                <p id="nome-produtor">Nome do Produtor</p>
+                <p id="localizacao-produtor"><span id="local-produtor"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="detalhes-adicionais">
+        <div class="detalhes-grid">
+            
+            <div class="coluna-detalhes">
+                <div class="descricao">
+                    <h2>Descrição</h2>
+                    <p id="descricao-produto">Aqui vai a descrição detalhada do produto.</p>
+                </div>
+                
+                <div class="detalhes">
+                    <h2>Detalhes</h2>
+                    <p><strong>Categoria:</strong> <span id="categoria-produto"></span></p>
+                    <p><strong>Contato do Produtor:</strong> <span id="contato-produtor"></span></p>
+                </div>
+            </div>
+
+            <div class="coluna-detalhes">
+                <div class="nutricional">
+                    <h2>Informações Nutricionais</h2>
+                    <p><strong>Valor Energético:</strong> <span id="valor-energetico-produto"></span></p>
+                    <p><strong>Carboidratos:</strong> <span id="carboidratos-produto"></span></p>
+                    <p><strong>Proteínas:</strong> <span id="proteinas-produto"></span></p>
+                    <p><strong>Fibras:</strong> <span id="fibras-produto"></span></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="avaliacoes-clientes">
+        <h2>Avaliações dos Clientes</h2>
+        <ul id="lista-avaliacoes">
+            <p>Nenhuma avaliação ainda.</p>
+        </ul>
+    </section>
+
+</main>
+
+        <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+<script src="/codigos/src/public/assets/js/auth.js"></script>
+<script src="/codigos/src/data/db.json"></script>
+<script src="/codigos/src/public/assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento com Débito</title>
+  <link rel="stylesheet" href="/codigos/src/public/assets/css/pagamentos.css" />
+  <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+  <main class="pagamento-container">
+    <div class="pagamento-box">
+      <h2>Pagamento com Cartão de Débito</h2>
+      <form class="formulario-pagamento">
+        <label for="banco">Banco</label>
+        <input type="text" id="apenasTexto" name="banco" placeholder="Nome do banco" required />
+
+        <label for="numero">Número do Cartão</label>
+        <input type="number" id="numero" name="numero" maxlength="19" placeholder="1234 5678 9012 3456" required />
+
+        <label for="validade">Validade</label>
+        <input type="month" id="validade" name="validade" required />
+
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" name="cvv" maxlength="4" placeholder="123" required />
+
+        <button type="submit">Pagar com Débito</button>
+      </form>
+    </div>
+  </main>
+
+        <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+  <script>
+  const input = document.getElementById('apenasTexto');
+  input.addEventListener('input', function () {
+    this.value = this.value.replace(/[0-9]/g, ''); 
+  });
+
+  const form = document.querySelector('.formulario-pagamento');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    localStorage.setItem('pagamentoConcluido', 'debito');
+
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = "Pagamento feito";
+    btn.disabled = true;
+    btn.style.backgroundColor = "#c1ffb5";
+    btn.style.cursor = "default";
+
+    Array.from(form.elements).forEach(el => el.disabled = true);
+  });
+</script>
+
+<script src="/codigos/src/public/assets/js/auth.js"></script>
+
+</body>
+
+</html>

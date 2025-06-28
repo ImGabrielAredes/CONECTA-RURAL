@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Curso - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/detalhescur.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="/codigos/src/public/paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login"></div>
+    </header>
+
+    <main class="container-detalhes">
+        <section class="curso-principal">
+            <div class="curso-imagem"
+                 id="imagem-curso"
+            </div>
+            <div class="info-principal">
+                <h1 id="titulo-curso">Carregando curso...</h1>
+                <p class="instrutor-curso">Por: <span id="instrutor-curso"></span></p>
+                <div class="tags-curso">
+                    <span id="categoria-curso" class="tag"></span>
+                    <span id="dificuldade-curso" class="tag"></span>
+                    <span id="duracao-curso" class="tag"></span>
+                </div>
+                <p id="descricao-resumida" class="descricao-resumida"></p>
+                <div id="botao-inscricao-container" class="inscricao-box"></div>
+            </div>
+        </section>
+
+        <section class="detalhes-adicionais">
+            <div class="detalhes-grid">
+                <div class="coluna-detalhes">
+                    <h2>O que você vai aprender?</h2>
+                    <ul id="modulos-lista">
+                        </ul>
+                </div>
+                <div class="coluna-detalhes">
+                    <h2>Informações Gerais</h2>
+                    <p><strong>Público-alvo:</strong> <span id="publico-alvo-curso"></span></p>
+                    <p><strong>Formato:</strong> <span id="formato-curso"></span></p>
+                    <p><strong>Publicado em:</strong> <span id="data-curso"></span></p>
+                    <p id="preco-curso"><strong>Preço:</strong> </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-container" class="video-apresentacao" style="display: none;">
+            <h2>Vídeo de Apresentação</h2>
+            <div class="video-wrapper">
+                <iframe id="video-curso" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <a href="/codigos/src/public/paginas/cursos.html" class="voltar-cursos-btn">← Voltar para todos os Cursos</a>
+    </main>
+    
+    <footer>
+        <h1>Contatos</h1>
+        <a href="#"><img src="/codigos/src/public/img/instalogo.png" alt="Instagram Logo"></a>
+        <a href="#"><img src="/codigos/src/public/img/facebooklogo.png" alt="Facebook Logo"></a>
+    </footer>
+
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/detalhescursos.js"></script>
+</body>
+</html>

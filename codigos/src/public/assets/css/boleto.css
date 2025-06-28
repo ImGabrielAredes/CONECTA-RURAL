@@ -1,0 +1,57 @@
+
+  .pagamento-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+  }
+  
+  .pagamento-box {
+    background-color: #0a5500;
+    padding: 30px 40px;
+    border-radius: 20px;
+    color: white;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .pagamento-box p {
+    margin-top: 8px;
+  }
+  
+  #boleto-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: white;
+    color: blue;
+    text-decoration: underline;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: normal;
+    cursor: default;
+  }
+  
+  footer {
+    background-color: #168a06;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 60px;
+  }
+  
+  footer h3 {
+    margin: 10px;
+    color: white;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a p {
+    margin-left: 15px;
+    color: white;
+  }
+  

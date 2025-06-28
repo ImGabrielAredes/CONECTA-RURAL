@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagamento com Cartão de Crédito</title>
+  <link rel="stylesheet" href="/codigos/src/public/assets/css/pagamentos.css" />
+  <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+  <main class="pagamento-container">
+    <div class="pagamento-box">
+      <h2>Pagamento com Cartão de Crédito</h2>
+
+      <form class="formulario-pagamento">
+        <label for="nome">Nome do Titular:</label>
+        <input
+          type="text"
+          id="apenasTexto"
+          name="nome"
+          placeholder="Nome completo"
+          pattern="[A-Za-zÀ-ú\s]+"
+          title="Use apenas letras e espaços"
+          required
+        />
+
+        <label for="cartao">Número do Cartão:</label>
+        <input
+          type="text"
+          id="cartao"
+          name="cartao"
+          maxlength="19"
+          placeholder="1234 5678 9012 3456"
+          pattern="\d{13,19}"
+          title="Digite de 13 a 19 números"
+          required
+        />
+
+        <label for="validade">Validade:</label>
+        <input type="month" id="validade" name="validade" required />
+
+        <label for="cvv">Código de Segurança (CVV):</label>
+        <input
+          type="text"
+          id="cvv"
+          name="cvv"
+          maxlength="4"
+          placeholder="123"
+          pattern="\d{3,4}"
+          title="Digite 3 ou 4 números"
+          required
+        />
+
+        <button type="submit">Realizar Pagamento</button>
+      </form>
+    </div>
+  </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+  <script>
+    
+    const inputNome = document.getElementById('apenasTexto');
+    inputNome.addEventListener('input', function () {
+      this.value = this.value.replace(/[^A-Za-zÀ-ú\s]/g, '');
+    });
+
+    const inputCartao = document.getElementById('cartao');
+    inputCartao.addEventListener('input', function () {
+      
+      let valor = this.value.replace(/\D/g, '');
+      
+      valor = valor.match(/.{1,4}/g)?.join(' ') || '';
+      this.value = valor;
+    });
+
+    const inputCVV = document.getElementById('cvv');
+    inputCVV.addEventListener('input', function () {
+      this.value = this.value.replace(/\D/g, '').slice(0, 4);
+    });
+
+
+    const form = document.querySelector('.formulario-pagamento');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); 
+
+      localStorage.setItem('pagamentoConcluido', 'credito');
+
+      Array.from(form.elements).forEach(el => el.disabled = true);
+
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = "Pagamento feito";
+      btn.disabled = true;
+      btn.style.backgroundColor = "#c1ffb5";
+      btn.style.cursor = "default";
+    });
+  </script>
+
+  <script src="/codigos/src/public/assets/js/auth.js"></script>
+  
+</body>
+
+</html>

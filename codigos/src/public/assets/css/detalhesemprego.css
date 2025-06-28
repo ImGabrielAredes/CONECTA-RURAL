@@ -1,0 +1,25 @@
+.detalhe-emprego-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+#detalhe-vaga-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+#detalhe-vaga-box h1 {
+    font-size: 2.5em;
+    color: #063500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.localizacao { font-style: italic; color: #555; margin-bottom: 30px; display: flex; align-items: center; }
+.localizacao img { width: 16px; height: 16px; margin-right: 8px; }
+.info-bloco { margin-bottom: 30px; }
+.info-bloco h2 { font-size: 1.6em; color: #168a06; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 15px; }
+.info-bloco p { font-size: 1.1em; line-height: 1.7; }
+.candidatar-container { text-align: center; margin-top: 40px; }
+.botao-candidatar { background-color: #0a5500; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: background-color 0.3s ease; }
+.botao-candidatar:hover { background-color: #1a9e08; }

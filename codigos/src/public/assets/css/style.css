@@ -1,0 +1,159 @@
+.barra-pesquisa-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    width: auto;
+    border-radius: 8px;
+    border: 2px solid #0a5500;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barra-pesquisa input[type="text"] {
+    flex-grow: 1;
+    padding: 9px;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px 0 0 8px;
+}
+
+.barra-pesquisa button[type="submit"] {
+    background-color: #0a5500;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+.barra-pesquisa button[type="submit"]:hover {
+    background-color: #3cb371;
+    color: white;
+}
+
+.top-produtos,
+.promocoes {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.top-produtos h2,
+.promocoes h2 {
+    color: #063500;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.produto-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.produto-item .fazenda {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.botao-detalhes {
+    display: inline-block;
+    background-color: #0a5500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-detalhes:hover {
+    background-color: #168a06;
+}
+
+.promocao .imagem-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tag-promocao {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background-color: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.produto-item img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.swiper {
+    width: 100%;
+    padding: 10px 0 40px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+}
+
+.swiper-slide .produto-item {
+    width: 100%; 
+    margin: 0 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #0a5500; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #168a06; 
+}

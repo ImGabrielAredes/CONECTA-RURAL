@@ -1,0 +1,145 @@
+.pesquisa-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#titulo-pesquisa {
+    font-size: 2.5em;
+    color: #063500;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.secao-resultados {
+    margin-bottom: 60px;
+}
+
+.secao-resultados h2 {
+    font-size: 2em;
+    color: #0a5500;
+    margin-bottom: 30px;
+}
+
+.grid-resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.aviso {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.card-produto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+.card-produto:hover {
+    transform: translateY(-5px);
+}
+
+.card-produto img {
+    max-width: 150px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+.card-produto h3 { 
+    font-size: 1.1em;
+    color: #333; 
+    margin: 5px 0;
+}
+
+.card-produto .fazenda { 
+    font-size: 0.8em;
+    color: #777; 
+    margin-bottom: 15px;
+    min-height: 30px;
+}
+
+.card-produto .botao-detalhes { 
+    display: inline-block; 
+    background-color: #0a5500; 
+    color: white; 
+    padding: 8px 16px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+    font-size: 0.9em;
+    align-self: center;
+}
+
+.card-curso {
+    background: #168a06;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.card-curso img { 
+    width: 80px; 
+    margin-bottom: 10px; 
+}
+.card-curso h3 { 
+    font-size: 1.2em; 
+    margin: 0 0 10px 0; 
+}
+.card-curso .sabermais { 
+    display: inline-block; 
+    color: white; 
+    background-color: rgb(27, 117, 0); 
+    font-size: small; 
+    border-radius: 5px; 
+    margin-top: 15px; 
+    padding: 8px 15px; 
+    text-decoration: none; 
+}
+
+.card-emprego {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.card-emprego img { 
+    width: 80px; 
+    height: 80px; 
+    margin-bottom: 15px; 
+}
+.card-emprego h3 { 
+    margin: 10px 0; 
+    color: #333; 
+}
+.card-emprego p { 
+    color: #666; 
+}
+.card-emprego button { 
+    margin-top: 10px; 
+    background-color: #0e5d00; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}

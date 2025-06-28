@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="/codigos/src/public/assets/js/proteger-pagina.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Currículo - Conecta Rural</title>
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css" />
+    <link rel="stylesheet" href="/codigos/src/public/assets/css/curriculo.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+               <li><a href="/codigos/src/public/paginasmap.html">Mapa</a></li>
+
+            </ul>
+        </nav>
+        <div class="botoes-login"></div>
+    </header>
+
+    <main class="formulario-container">
+        <div class="form-box">
+            <h2 id="titulo-vaga">Candidatar-se para a Vaga</h2>
+            <form id="formCurriculo">
+                <p>Seus dados são preenchidos automaticamente. Anexe seu currículo para concluir.</p>
+                
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" readonly />
+
+                <label for="email">E-mail de Contato:</label>
+                <input type="email" id="email" name="email" readonly />
+                
+                <label for="arquivo">Anexar Currículo (PDF ou DOC):</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx" required />
+
+                <button type="submit">Enviar Candidatura</button>
+            </form>
+            <div id="mensagemSucesso" style="display: none;">Candidatura enviada com sucesso!</div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <a href="#"><img src="/codigos/src/public/img/instalogo.png" alt="Instagram Logo"></a>
+        <a href="#"><img src="/codigos/src/public/img/facebooklogo.png" alt="Facebook Logo"></a>
+    </footer>
+    
+    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigos/src/public/assets/js/curriculo.js"></script>
+</body>
+</html>

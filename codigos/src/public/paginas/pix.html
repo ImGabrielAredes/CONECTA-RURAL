@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagamento com PIX</title>
+  <link rel="stylesheet" href="/codigos/src/public/assets/css/pagamentos.css" />
+  <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../home.html"><img src="../img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../paginas/index.html">Mercado</a></li>
+                <li><a href="../paginas/cursos.html">Cursos</a></li>
+                <li><a href="../paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="../paginas/map.html">Mapa</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-login">
+            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
+            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
+        </div>
+    </header>
+
+  <main class="pagamento-container">
+    <div class="pagamento-box" style="text-align:center;">
+      <h2>Pagamento via PIX</h2>
+
+      <p><strong>Chave PIX gerada:</strong> <span id="pix-key"></span></p>
+
+      <div id="qrcode" style="margin: 20px auto;"></div>
+
+      <button id="btn-pagamento" style="margin-top:20px; cursor:pointer; padding:10px 20px; border:none; border-radius:10px; background-color:#ffffff; font-weight:bold; color:#000;">
+        Pagar
+      </button>
+    </div>
+  </main>
+
+    <footer>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="../img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="../img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+    </footer>
+
+  <script>
+    function gerarChavePix() {
+      const nomes = ["usuario", "cliente", "contato", "pagamento", "teste"];
+      const dominios = ["exemplo.com", "email.com", "teste.org", "pixfake.com"];
+      const nome = nomes[Math.floor(Math.random() * nomes.length)];
+      const numero = Math.floor(Math.random() * 10000);
+      const dominio = dominios[Math.floor(Math.random() * dominios.length)];
+      return `${nome}${numero}@${dominio}`;
+    }
+
+    function atualizarPix() {
+      const chave = gerarChavePix();
+      document.getElementById("pix-key").textContent = chave;
+
+      const qrContent = `PIX:${chave}`;
+
+      const qrContainer = document.getElementById("qrcode");
+      qrContainer.innerHTML = "";
+
+      QRCode.toCanvas(qrContent, { width: 200, color: { dark: "#000000", light: "#ffffff" } }, function (error, canvas) {
+        if (error) console.error(error);
+        qrContainer.appendChild(canvas);
+      });
+    }
+
+    window.onload = () => {
+      atualizarPix();
+
+      const btn = document.getElementById("btn-pagamento");
+      btn.addEventListener("click", () => {
+        btn.textContent = "Pagamento feito";
+        btn.disabled = true;
+        btn.style.cursor = "default";
+        btn.style.backgroundColor = "#c1ffb5";
+
+        localStorage.setItem("pagamentoConcluido", "pix");
+
+      });
+    };
+  </script>
+
+  <script src="/codigos/src/public/assets/js/auth.js"></script>
+  
+</body>
+
+</html>
+
+
