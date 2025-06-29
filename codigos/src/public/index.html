@@ -4,46 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta Rural - Bem-vindo!</title>
-    <link rel="stylesheet" href="/codigos/src/public/assets/css/style-global.css">
-    <link rel="stylesheet" href="/codigos/src/public/assets/css/home.css">
+    <link rel="stylesheet" href="/codigo/src/public/assets/css/style-global.css">
+    <link rel="stylesheet" href="/codigo/src/public/assets/css/home.css">
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <a href="home.html"><img src="/codigos/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
+            <a href="/codigo/src/public/paginas/index.html"><img src="/codigo/src/public/img/logocrbranco.png" alt="Conecta Rural Logo"></a>
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="/codigos/src/public/paginas/index.html">Mercado</a></li>
-                <li><a href="/codigos/src/public/paginas/cursos.html">Cursos</a></li>
-                <li><a href="/codigos/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
-                <li><a href="/codigos/src/public/paginas/map.html">Mapa</a></li>
+                <li><a href="/codigo/src/public/paginas/index.html">Home</a></li>
+                <li><a href="/codigo/src/public/paginas/index.html">Mercado</a></li>
+                <li><a href="/codigo/src/public/paginas/cursos.html">Cursos</a></li>
+                <li><a href="/codigo/src/public/paginas/paginainicialempregos.html">Empregos</a></li>
+                <li><a href="/codigo/src/public/paginas/map.html">Mapa</a></li>
             </ul>
         </nav>
         <div class="botoes-login">
-            <a href="/codigos/src/public/paginas/cadastro.html#login" class="entrar">Entrar</a>
-            <a href="/codigos/src/public/paginas/cadastro.html#cadastro" class="cadastrar">Cadastrar</a>
-        </div>
+            </div>
     </header>
 
-        <main class="home-container">
+    <main class="home-container">
+        <section class="secao-destaque">
+            <div class="bloco-boas-vindas">
+                <h1>Bem-vindo ao Conecta Rural</h1>
+                <p>A plataforma completa para encontrar cursos, empregos e produtos do campo.</p>
+                
+                <form class="barra-pesquisa-home" action="/codigo/src/public/paginas/pesquisa.html" method="get">
+                    <input type="text" name="q" placeholder="Digite um alimento, curso ou emprego..." aria-label="Campo de pesquisa">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </section>
 
-<section class="secao-destaque">
-    <div class="bloco-boas-vindas">
-        <h1>Bem-vindo ao Conecta Rural</h1>
-        <p>A plataforma completa para encontrar cursos, empregos e produtos do campo.</p>
-        
-        <form class="barra-pesquisa-home" action="/pesquisa" method="get">
-            <input type="text" name="q" placeholder="Digite um alimento, curso ou emprego..." aria-label="Campo de pesquisa">
-            <button type="submit">Pesquisar</button>
-        </form>
-    </div>
-</section>
-
-<section class="secao-mapa-destaque">
-            <a href="../public/paginas/map.html" class="card-link-mapa">
+        <section class="secao-mapa-destaque">
+            <a href="/codigo/src/public/paginas/map.html" class="card-link-mapa">
                 <div class="card-mapa">
                     <div class="card-mapa-conteudo">
                         <h3>Mapa de Produtos</h3>
@@ -58,36 +55,36 @@
             <h2 class="titulo-secao">O que você procura?</h2>
             <div class="cards-container">
 
-                <a href="../public/paginas/paginainicialempregos.html" class="card-link">
+                <a href="/codigo/src/public/paginas/paginainicialempregos.html" class="card-link">
                     <div class="card">
-                        <img src="../public/img/emprego.png" alt="" class="card-icone">
+                        <img src="/codigo/src/public/img/emprego.png" alt="Ícone de Empregos" class="card-icone">
                         <h3>Empregos</h3>
                         <p class="card-descricao">Encontre vagas ou anuncie oportunidades para conectar talentos ao campo.</p>
                         <span class="card-acao">Ver Vagas &gt;</span>
                     </div>
                 </a>
 
-                <a href="../public/paginas/cursos.html" class="card-link">
+                <a href="/codigo/src/public/paginas/cursos.html" class="card-link">
                     <div class="card">
-                        <img src="../public/img/cursos.png" alt="" class="card-icone">
+                        <img src="/codigo/src/public/img/cursos.png" alt="Ícone de Cursos" class="card-icone">
                         <h3>Cursos</h3>
                         <p class="card-descricao">Capacite-se com aulas e tutoriais voltados para o agronegócio moderno.</p>
                         <span class="card-acao">Explorar Cursos &gt;</span>
                     </div>
                 </a>
 
-                <a href="../public/paginas/index.html" class="card-link">
+                <a href="/codigo/src/public/paginas/index.html" class="card-link">
                     <div class="card">
-                        <img src="../public/img/mercado.png" alt="" class="card-icone">
+                        <img src="/codigo/src/public/img/mercado.png" alt="Ícone de Mercado" class="card-icone">
                         <h3>Mercado</h3>
                         <p class="card-descricao">Anuncie seus produtos e encontre os melhores insumos sem intermediários.</p>
                         <span class="card-acao">Acessar Mercado &gt;</span>
                     </div>
                 </a>
 
-                <a href="../public/paginas/sobre.html" class="card-link">
+                <a href="/codigo/src/public/paginas/sobre.html" class="card-link">
                     <div class="card">
-                        <img src="../public/img/sobrenos.png" alt="" class="card-icone">
+                        <img src="/codigo/src/public/img/sobrenos.png" alt="Ícone Sobre Nós" class="card-icone">
                         <h3>Sobre Nós</h3>
                         <p class="card-descricao">Conheça a nossa missão de digitalizar e fortalecer a comunidade rural brasileira.</p>
                         <span class="card-acao">Saber Mais &gt;</span>
@@ -96,16 +93,15 @@
 
             </div>
         </section>
-
     </main>
 
     <footer>
-    <h1>Contatos</h1>
-        <h2><a href="#"><img src="img/instalogo.png" alt="Instagram Logo"></a></h2>
-        <h2><a href="#"><img src="img/facebooklogo.png" alt="Facebook Logo"></a></h2>
+        <h1>Contatos</h1>
+        <h2><a href="#"><img src="/codigo/src/public/img/instalogo.png" alt="Instagram Logo"></a></h2>
+        <h2><a href="#"><img src="/codigo/src/public/img/facebooklogo.png" alt="Facebook Logo"></a></h2>
     </footer>
 
-    <script src="/codigos/src/public/assets/js/index.js"></script>
-    <script src="/codigos/src/public/assets/js/auth.js"></script>
+    <script src="/codigo/src/public/assets/js/index.js"></script>
+    <script src="/codigo/src/public/assets/js/auth.js"></script>
 </body>
 </html>

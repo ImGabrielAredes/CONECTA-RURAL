@@ -1,5 +1,4 @@
-
-# ARQUIVO: Dockerfile (VERSÃO CORRIGIDA PARA A NOVA ESTRUTURA)
+# ARQUIVO: Dockerfile (VERSÃO FINAL E CORRIGIDA)
 
 # Usa uma imagem oficial do Node.js
 FROM node:18-alpine
@@ -7,22 +6,19 @@ FROM node:18-alpine
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copia APENAS o package.json primeiro para otimizar o cache do Docker
+# Copia APENAS os arquivos de configuração de pacotes primeiro
+# Isso otimiza o cache do Docker, tornando builds futuros mais rápidos
 COPY package*.json ./
 
-# Instala as dependências
+# Instala as dependências (Express e JSON Server)
 RUN npm install
 
-# Copia o restante dos arquivos do projeto
-COPY . .
-
-# --- MUDANÇA IMPORTANTE ---
-# Define o diretório de trabalho para DENTRO da pasta que contém o site
-WORKDIR /app/codigos/src
+# --- MUDANÇA PRINCIPAL AQUI ---
+# Copia todo o conteúdo da pasta 'src' para dentro do container
+COPY src/ .
 
 # Expõe a porta que o nosso servidor Node.js vai usar
-EXPOSE 3000
+EXPOSE 8080
 
-# O comando para iniciar o servidor a partir da pasta correta
-# Usamos 'node server.js' diretamente, pois ele agora está no contexto certo
+# O comando para iniciar o servidor
 CMD [ "node", "server.js" ]

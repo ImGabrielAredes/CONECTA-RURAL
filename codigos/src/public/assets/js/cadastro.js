@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (loginForm) {
         loginForm.addEventListener('submit', async function (event) {
-            event.preventDefault(); // Impede o recarregamento da página
+            event.preventDefault();
 
             const email = this.querySelector('input[name="email"]').value;
             const senha = this.querySelector('input[name="senha"]').value;
