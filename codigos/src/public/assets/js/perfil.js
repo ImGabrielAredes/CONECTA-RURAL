@@ -1,5 +1,4 @@
-const API_URL = 'http://localhost:3000';
-
+const API_URL = '/api'; 
 document.addEventListener('DOMContentLoaded', function () {
     const usuarioLogado = JSON.parse(sessionStorage.getItem('usuarioLogado'));
     if (!usuarioLogado) {

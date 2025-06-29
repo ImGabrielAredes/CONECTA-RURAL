@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = '/api'; 
 
 document.addEventListener('DOMContentLoaded', async () => {
     const topProdutosWrapper = document.querySelector('#top-produtos-swiper .swiper-wrapper');

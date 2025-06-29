@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = '/api'; 
 
 function showStep(stepNumber) {
     document.querySelectorAll('#cadastro-container .step').forEach(step => {

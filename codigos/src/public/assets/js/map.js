@@ -1,6 +1,4 @@
-
-const API_URL = 'http://localhost:3000';
-
+const API_URL = '/api'; 
 function iniciarMapa() {
 
     fetch(`${API_URL}/produtos`)
